@@ -16,7 +16,9 @@ export function Header() {
     return (
         <HeaderContainer>
             <HeaderWrapper>
-                <img src={logo} alt=""/>
+                <Link to="/home">
+                    <img src={logo} alt=""/>
+                </Link>
 
                 <SearchInput
                     id="search"
@@ -25,20 +27,22 @@ export function Header() {
                 />
 
                 <NavigationContainer>
-                    <Link href="">
+                    <Link to="/home">
                         <House color="#444444" weight="fill" size={28} />
                     </Link>
 
-                    <Link href="">
+                    <Link to="/community">
                         <UsersThree color="#444444" weight="fill" size={28} />
                     </Link>
 
-                    <Link href="">
+                    <Link to="">
                         <Bell color="#444444" weight="fill" size={28} />
                     </Link>
                 </NavigationContainer>
 
-                <Avatar profileAsset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbBMwRJfFeRL23d-4MB-yq_6NyJFUw7zprYQ&usqp=CAU" />
+                <Link to="/profile">
+                    <Avatar profileAsset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbBMwRJfFeRL23d-4MB-yq_6NyJFUw7zprYQ&usqp=CAU" />
+                </Link>
             </HeaderWrapper>
         </HeaderContainer>
     )

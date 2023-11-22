@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import { DefaultLayout } from "./layouts";
 
-import { Home, Profile } from './pages'
+import { Home, Profile, Community } from './pages'
 
 const router = createBrowserRouter([
   {
@@ -16,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "profile",
         element: <Profile />,
+      },
+      {
+        path: "community",
+        element: <Community />,
       },
     ],
   },
